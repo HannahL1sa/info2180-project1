@@ -10,66 +10,118 @@ body {
     width: 100%;
 }
 
+/*Header*/
 h1{
     float: left;
 }
 
-/*In order to overcome this problem, as the best practice is to float the ul to the right, and li to the left*/
-ul{
-    list-style-type: none; /*Removes the bullets. A navigation bar does not need list markers*/
-    /*margin: 0;
-    padding: 0;*/
+nav{
     float: right;
 }
 
-ul li{
-    float: left;
-    padding: 8px;
+nav ul{
+    list-style-type: none;
 }
- 
+
+nav li{
+    padding: 8px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav li a:link , a:visited{
+    text-decoration: none;
+}
+
+/*Overview Section*/
 .overview-hero .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.overview-hero-image{
-    margin: 40px;
+
+.overview-hero{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
+.overview-hero h2{
+    padding-left: 50px;
+}
+
+.overview-hero p{
+    padding-left: 50px;
+    margin-right: 260px;
+}
+
+/*Learn About Section*/
 .cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/*place section in 3 columns*/
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    padding-bottom: 40px;
 }
 
-
-.testing .testing-desciption{
-    margin-right: 150px;
+.card h3{
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+.card p{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -8px;
+}
+
+/*Testing Section*/
 
 .testing .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/*.stories .container .article-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}*/
-
-.stories .img{
-    margin: 10px;
-    border-radius: 50%;
+.testing-desciption{
+    margin-right: 350px;
 }
 
-.stories .container .article{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
+.testing-desciption .cta{
+    margin-left: 60px;
+}
+
+/*Recent Stories Section*/
+.stories article{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+}
 
+.stories h3,p{
+    padding-left: 25px;
+}
+
+.stories h3{
+    margin-right: 240px;
+    
+}
+
+.stories p{
+    margin-right: 180px;
+}
+
+.stories img{
+    margin-right: 20px;
+}
+
+.stories{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*Newsletter Section*/
+.newsletter{
+    padding-bottom: 50px;
 }
 .newsletter .container{
     margin-top: 20px;
@@ -77,12 +129,15 @@ ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+}
+.newsletter .btn{
+    height: 40px;
+    width: 120px;
 }
 
-
-/*.newsletter .container .input {
-    float: left;
-    margin-right:10px;
-    margin-bottom: 5px;
-}*/
+/*Footer
+footer .container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+*/
