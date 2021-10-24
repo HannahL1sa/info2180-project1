@@ -1,62 +1,63 @@
-/* Add your CSS to this file */
-body {
-    margin: 0;
-    font-size: 16px;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
-}
-
 /*Header*/
-h1{
+header{
+    background-color: white;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+header h1{
+    font-size: 18px;
     float: left;
 }
 
-nav{
-    float: right;
-}
-
-nav ul{
+header .container ul {
     list-style-type: none;
+    display: flex;
+    justify-content: right;
 }
 
-nav li{
-    padding: 8px;
+header li{
     display: inline-block;
+    padding: 8px;
+}
+header li a:link , a:visited{
+    text-decoration: none;
+    color: #6b7280;
     font-size: 18px;
 }
 
-nav li a:link , a:visited{
-    text-decoration: none;
+header li a:hover{
+    color: #5A67D8;
 }
 
 /*Overview Section*/
 .overview-hero .container{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .overview-hero{
     padding-top: 50px;
     padding-bottom: 50px;
-
+    background-color: #E2E8F0;
 }
 
 .overview-hero h2{
-    padding-left: 50px;
+    margin-left: 60px;
 }
 
 .overview-hero p{
-    padding-left: 50px;
-    margin-right: 260px;
+    padding-left: 60px;
+    margin-right: 180px;
 }
 
 /*Learn About Section*/
-.cards{
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
@@ -66,6 +67,8 @@ nav li a:link , a:visited{
 .card h3{
     padding-left: 10px;
     padding-right: 10px;
+    color: #48BB78;
+    font-size: 21px;
 }
 
 .card p{
@@ -73,20 +76,47 @@ nav li a:link , a:visited{
     padding-right: 15px;
     margin-top: -8px;
 }
+.card{
+    border: 2px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow:2px 3px #cecece;
+}
+
 
 /*Testing Section*/
+.testing .cta{
+    background-color: #48BB78;
+    border-radius: 5px;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    margin-right: 70px;
+    padding-top: 15px;
+}
 
+.testing a{
+    text-decoration: none;
+    color: white;  
+}
+
+.testing p{
+    margin-right: 250px;
+}
+
+.testing h2,p{
+    padding-left: 0px;
+}
+
+.testing { 
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #4A5568;
+}
 .testing .container{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.testing-desciption{
-    margin-right: 350px;
-}
-
-.testing-desciption .cta{
-    margin-left: 60px;
+    justify-content: space-around;
+    color: white;
 }
 
 /*Recent Stories Section*/
@@ -97,13 +127,17 @@ nav li a:link , a:visited{
     margin-bottom: 30px;
 }
 
+.stories h2{
+    color: #5A67D8;
+}
+
 .stories h3,p{
     padding-left: 25px;
 }
 
 .stories h3{
     margin-right: 240px;
-    
+    font-size: 18px;
 }
 
 .stories p{
@@ -112,32 +146,84 @@ nav li a:link , a:visited{
 
 .stories img{
     margin-right: 20px;
+    border-radius: 50%;
+}
+
+.stories a{
+    text-decoration: none;
+    color: #5A67D8;
 }
 
 .stories{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 /*Newsletter Section*/
 .newsletter{
-    padding-bottom: 50px;
-}
-.newsletter .container{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.newsletter .btn{
-    height: 40px;
-    width: 120px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #48BB78;
+    color: white;
 }
 
-/*Footer
-footer .container{
+.newsletter .btn{
+    height: 40px;
+    width: 130px;
+    background-color: #5A67D8;
+    border-radius: 5px;
+    margin-left: 10px;
+    border-style: none;
+    color: white;
+}
+
+.newsletter input{
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border-style: none;
+}
+
+.newsletter h3{
+    margin-bottom: -5px;
+}
+
+.newsletter p{
+    padding-left: 245px;
+    padding-right: 245px;
+}
+
+.newsletter .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
+footer{
+    background-color: #4A5568;
+    color: white;
+    overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-*/
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
