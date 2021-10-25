@@ -1,28 +1,30 @@
 /*Header*/
 header{
     background-color: white;
-    font-size: 18px;
     overflow: hidden;
 }
 
 header h1{
-    font-size: 18px;
     float: left;
+    padding-top: 4px;
+    font-size: 18px;
 }
 
-header .container ul {
+header ul {
     list-style-type: none;
-    display: flex;
-    justify-content: right;
+    float: right;
+    padding-bottom: 4px;
 }
 
 header li{
     display: inline-block;
-    padding: 8px;
+    padding-right: 8px;
 }
+
 header li a:link , a:visited{
     text-decoration: none;
     color: #6b7280;
+    font-weight: bold;
     font-size: 18px;
 }
 
@@ -47,9 +49,10 @@ header li a:hover{
 }
 
 .overview-hero p{
-    padding-left: 60px;
     margin-right: 180px;
+    margin-left: 60px;
 }
+
 
 /*Learn About Section*/
 .learn-about h2{
@@ -72,14 +75,14 @@ header li a:hover{
 }
 
 .card p{
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 15px;
     margin-top: -8px;
 }
 .card{
     border: 2px solid #E2E8F0;
     border-radius: 5px;
-    box-shadow:2px 3px #cecece;
+    box-shadow: -1px 3px 6px #E2E8F0;
 }
 
 
@@ -87,7 +90,7 @@ header li a:hover{
 .testing .cta{
     background-color: #48BB78;
     border-radius: 5px;
-    width: 220px;
+    width: 280px;
     height: 40px;
     text-align: center;
     margin-right: 70px;
@@ -100,11 +103,7 @@ header li a:hover{
 }
 
 .testing p{
-    margin-right: 250px;
-}
-
-.testing h2,p{
-    padding-left: 0px;
+    margin-right: 150px;
 }
 
 .testing { 
@@ -131,17 +130,15 @@ header li a:hover{
     color: #5A67D8;
 }
 
-.stories h3,p{
-    padding-left: 25px;
-}
-
 .stories h3{
     margin-right: 240px;
     font-size: 18px;
+    padding-left: 25px;
 }
 
 .stories p{
     margin-right: 180px;
+    padding-left: 25px;
 }
 
 .stories img{
@@ -161,7 +158,7 @@ header li a:hover{
 
 /*Newsletter Section*/
 .newsletter{
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 60px;
     background-color: #48BB78;
     color: white;
