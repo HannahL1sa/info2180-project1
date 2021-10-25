@@ -32,6 +32,7 @@ header li a:hover{
     color: #5A67D8;
 }
 
+
 /*Overview Section*/
 .overview-hero .container{
     display: flex;
@@ -118,6 +119,7 @@ header li a:hover{
     color: white;
 }
 
+
 /*Recent Stories Section*/
 .stories article{
     display: flex;
@@ -155,6 +157,7 @@ header li a:hover{
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
 
 /*Newsletter Section*/
 .newsletter{
@@ -203,6 +206,7 @@ form{
     justify-content: center;
 }
 
+
 /*Footer*/
 footer{
     background-color: #4A5568;
@@ -211,6 +215,7 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 body {
     margin: 0;
